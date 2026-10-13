@@ -1,0 +1,1535 @@
+{
+  "version": "0.1.0",
+  "actions": [
+    {
+      "id": "explorer.extensions",
+      "title": "Show file extensions",
+      "category": "Windows preferences",
+      "summary": "Make file types visible in Explorer. Captures this account's previous configuration before changing it.",
+      "benefit": "Current-user preference",
+      "tradeoff": "Names become longer. Configuration is verified; open a new Explorer window or sign out to check the visible result.",
+      "mode": "Preference",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "profiles": [
+        "Everyday"
+      ]
+    },
+    {
+      "id": "explorer.taskbar-left",
+      "title": "Align the taskbar to the left",
+      "category": "Windows preferences",
+      "summary": "Move taskbar app buttons to the left for this account.",
+      "benefit": "Current-user preference",
+      "tradeoff": "Changes your navigation habit. Windows may need a shell refresh or sign-out before the visual result appears.",
+      "mode": "Preference",
+      "settingsUri": "ms-settings:taskbar",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-taskbar-in-windows",
+      "profiles": [
+        "Everyday"
+      ]
+    },
+    {
+      "id": "explorer.task-view",
+      "title": "Hide the Task View button",
+      "category": "Windows preferences",
+      "summary": "Hide the taskbar shortcut while retaining virtual desktops and keyboard access.",
+      "benefit": "Current-user preference",
+      "tradeoff": "Use Win+Tab to open Task View. A later shell refresh may be necessary.",
+      "mode": "Preference",
+      "settingsUri": "ms-settings:taskbar",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-taskbar-in-windows",
+      "profiles": [
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "appearance.transparency",
+      "title": "Turn off transparency effects",
+      "category": "Windows preferences",
+      "summary": "Use more opaque Windows surfaces without changing animations or accessibility settings.",
+      "benefit": "Current-user preference",
+      "tradeoff": "An appearance preference, with no guaranteed performance gain. Verify the visible effect after sign-out if necessary.",
+      "mode": "Preference",
+      "settingsUri": "ms-settings:easeofaccess-visualeffects",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/make-it-easier-to-focus-on-tasks",
+      "profiles": [
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "privacy.suggestions",
+      "title": "Reduce suggested content in Settings",
+      "category": "Windows preferences",
+      "summary": "Set this account's Settings suggestion preference. Other advertising and notification choices remain independent.",
+      "benefit": "Current-user preference",
+      "tradeoff": "Build-dependent preference. Reading the saved value does not prove all future suggestions are suppressed.",
+      "mode": "Preference",
+      "settingsUri": "ms-settings:privacy-general",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/general-privacy-settings-in-windows",
+      "profiles": [
+        "Privacy",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "privacy.advertising",
+      "title": "Turn off the advertising ID preference",
+      "category": "Windows preferences",
+      "summary": "Disable this account's advertising ID preference for apps that respect it.",
+      "benefit": "Current-user preference",
+      "tradeoff": "Does not block browser tracking or remove all advertising. Undo restores configuration, not an old identifier.",
+      "mode": "Preference",
+      "settingsUri": "ms-settings:privacy-general",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/general-privacy-settings-in-windows",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.p01",
+      "title": "Startup impact explorer",
+      "category": "Performance",
+      "summary": "Inventory user startup entries, publisher, path, enabled state and observed contribution. Link to Settings/Task Manager; optional Autoruns expert inspection. Startup controls",
+      "benefit": "Default diagnostic for all PCs",
+      "tradeoff": "Compare repeated sign-in-to-usable-desktop times. No mutation during scan.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/startup-boot/configure-startup-applications-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p02",
+      "title": "Selective startup suppression",
+      "category": "Performance",
+      "summary": "Use app-native startup control or a validated per-user adapter. Preserve antivirus, backup, accessibility, password managers and device utilities unless specifically selected. Startup controls",
+      "benefit": "Opt-in, exact selected nonessential apps",
+      "tradeoff": "Relaunch app and test intended features; restore exact enabled state. Delay is separately labeled from disable.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/startup-boot/configure-startup-applications-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p03",
+      "title": "Background workload diagnosis",
+      "category": "Performance",
+      "summary": "Rank sustained CPU/I/O/network/GPU work, not number of processes. WPR/WPA escalation identifies the responsible process/driver. WPR",
+      "benefit": "Default diagnostic, bounded sample",
+      "tradeoff": "Compare the same foreground task and sample duration; no automatic process killing.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows-hardware/test/wpt/windows-performance-recorder",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p04",
+      "title": "App background permissions",
+      "category": "Performance",
+      "summary": "Limit selected unused app background activity in its Settings page. Notifications/sync may change. Windows performance guidance",
+      "benefit": "Opt-in, apps exposing a supported control",
+      "tradeoff": "Check notification/sync behavior and foreground launch time; restore previous policy.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p05",
+      "title": "Browser/extension triage",
+      "category": "Performance",
+      "summary": "Identify browser resource use and guide to its own task manager, extensions and sleep/background settings; do not edit opaque profile databases.",
+      "benefit": "Guided opt-in",
+      "tradeoff": "Compare real tab set, cold/warm launch and memory pressure; undo within browser. Browser/version-specific research required before automation.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p06",
+      "title": "Search workload correction",
+      "category": "Performance",
+      "summary": "Preserve Search service. Review Classic/Enhanced and indexed folders; exclude only user-selected high-churn paths. Search performance",
+      "benefit": "Opt-in, measured indexing contention",
+      "tradeoff": "Search known documents/mail and monitor contention; restore scope. Reindexing takes time and is not routine cleanup.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/windows-search-performance-issues",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p07",
+      "title": "Storage pressure and large-item explorer",
+      "category": "Performance",
+      "summary": "Show bytes by volume/category, app/game locations and reclaim estimates. Prefer Storage cleanup surfaces. Storage settings",
+      "benefit": "Default scan, delete only selected categories",
+      "tradeoff": "Report actual freed bytes separately from speed. Deletion has no optimizer undo unless files were explicitly quarantined.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/storage-settings-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p08",
+      "title": "Conservative Storage Sense",
+      "category": "Performance",
+      "summary": "Show full retention policy; default proposed Downloads cleanup and cloud dehydration off, and make Recycle Bin retention explicit. Storage Sense",
+      "benefit": "Opt-in proposal",
+      "tradeoff": "Check saved rules; changing rules is reversible, already-deleted content is not.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/manage-drive-space-with-storage-sense",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p09",
+      "title": "SSD/HDD maintenance readiness",
+      "category": "Performance",
+      "summary": "Verify media mapping, TRIM and scheduled Optimize Drives; invoke supported maintenance only when indicated. Windows handles media-appropriate optimization. Storage settings",
+      "benefit": "Default diagnostic/preserve",
+      "tradeoff": "Check supported status/results; no claim that repeated TRIM boosts FPS. Avoid invalid disk joins based solely on friendly name.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/storage-settings-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p10",
+      "title": "Game storage/DirectStorage readiness",
+      "category": "Performance",
+      "summary": "Detect actual game drive and game support; use launcher's move feature to move selected games. DirectStorage must be implemented by the game. DirectStorage",
+      "benefit": "Default information; move opt-in",
+      "tradeoff": "Compare repeatable loading/streaming; moving back is conditional on space and launcher support. Never offer an “enable DirectStorage” registry switch.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://devblogs.microsoft.com/directx/directstorage-1-1-coming-soon/",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p11",
+      "title": "Component-store analysis",
+      "category": "Performance",
+      "summary": "Analyze before proposing supported cleanup. Keep repair operations separate from performance profiles.",
+      "benefit": "Guided maintenance",
+      "tradeoff": "Verify servicing outcome/space reclaimed. No ordinary preset performs ResetBase or destroys previous-OS rollback.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p12",
+      "title": "Driver and health diagnosis",
+      "category": "Performance",
+      "summary": "Detect failed devices/basic display drivers, record versions, link to Windows Update/OEM/vendor. DISM/SFC belong to symptom-driven repair.",
+      "benefit": "Default inventory; repair/update opt-in",
+      "tradeoff": "Retest original fault; establish the supported driver rollback route before replacement. No bulk driver-updater installation.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p13",
+      "title": "Windowed-game optimizations",
+      "category": "Performance",
+      "summary": "Supported Graphics setting changes presentation path; provide per-game exceptions. Auto HDR has a dependency on this setting. Windowed games",
+      "benefit": "Recommended proposal, compatible DX10/11 windowed/borderless games",
+      "tradeoff": "Compare frame delivery and compatibility; restore previous global/per-app state and restart game.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/optimizations-for-windowed-games-in-windows-11",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p14",
+      "title": "Correct GPU selection",
+      "category": "Performance",
+      "summary": "Guide to per-app graphics preference when a game uses the wrong GPU. Windowed games",
+      "benefit": "Opt-in, multi-GPU systems",
+      "tradeoff": "Check actual GPU use plus performance/power; restore Windows-decides or exact prior preference.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/optimizations-for-windowed-games-in-windows-11",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p15",
+      "title": "Refresh-rate mismatch detector",
+      "category": "Performance",
+      "summary": "Compare current mode to supported modes at the current resolution. Explain mode/bandwidth/battery tradeoffs. Refresh rate",
+      "benefit": "Default diagnostic; change opt-in",
+      "tradeoff": "User-visible confirmation and timed mode recovery; restore full prior mode, not refresh alone.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-au/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p16",
+      "title": "VRR/DRR/HDR/Auto HDR",
+      "category": "Performance",
+      "summary": "Expose supported capabilities; separate smoothness/appearance from FPS. DRR can cap some non-VRR games. Refresh rate, Auto HDR",
+      "benefit": "Opt-in presentation controls",
+      "tradeoff": "Check image, tearing, game refresh and battery; restore prior state. No blanket “HDR off for speed.”",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-au/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p17",
+      "title": "Preserve Game Mode/Game Bar",
+      "category": "Performance",
+      "summary": "Keep supported scheduling/game integrations. Detect AMD chipset/CPU dependencies and keep capture preference separate from package removal. AMD setup",
+      "benefit": "Default preserve",
+      "tradeoff": "Test game launch, overlay, capture and supported scheduling behavior; no action if already correct.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://community.amd.com/t5/gaming/how-to-set-up-your-system-with-a-new-amd-ryzen-9-7950x3d-or/ba-p/589464",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p18",
+      "title": "HAGS comparison",
+      "category": "Performance",
+      "summary": "Use exposed Graphics setting; retain current state until measured. GPU scheduling documentation does not prove a universal FPS gain. Graphics settings",
+      "benefit": "Experiment, supporting GPU/driver",
+      "tradeoff": "Reboot as needed; fixed scene/driver/settings A/B/A; restore exact state. Note metric limitations under HAGS.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://devblogs.microsoft.com/directx/navigating-the-redesigned-graphics-settings-page/",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p19",
+      "title": "Overlay/capture comparison",
+      "category": "Performance",
+      "summary": "Temporarily disable selected recording/overlay features within their own supported controls. Presence alone is not a defect.",
+      "benefit": "Opt-in experiment, selected apps",
+      "tradeoff": "Compare frame-time distribution and recording/voice needs; restore per-app settings. Keep Game Bar installed if platform needs it.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p20",
+      "title": "In-game latency features",
+      "category": "Performance",
+      "summary": "Offer NVIDIA Reflex or AMD Anti-Lag guidance for the identified title; no injected helpers or anti-cheat bypass. NVIDIA Reflex, AMD Anti-Lag",
+      "benefit": "Guided opt-in, supported GPU and game",
+      "tradeoff": "Measure supported latency metrics and frame pacing; undo in game/driver. Never copy vendor marketing percentages as a prediction.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://www.nvidia.com/en-us/geforce/technologies/reflex/",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p21",
+      "title": "FPS limits and graphics quality",
+      "category": "Performance",
+      "summary": "Use game-native controls for the user's target responsiveness, image quality and noise. Upscaling and generated frames must be disclosed as quality/latency tradeoffs.",
+      "benefit": "Guided opt-in, per game",
+      "tradeoff": "Fixed scene; separate application/render FPS from displayed/generated FPS. Restore exact game settings.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p22",
+      "title": "Frame-time analysis",
+      "category": "Performance",
+      "summary": "Integrate a pinned optional PresentMon capture tool with explicit process selection and bounded duration. PresentMon",
+      "benefit": "Default capability, user-started capture",
+      "tradeoff": "Report median/p95/p99 frame times, long frames and sample count. Record tool version/API/HAGS caveats; no benchmark injection.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://github.com/GameTechDev/PresentMon/blob/main/README.md",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p23",
+      "title": "Audio/DPC diagnosis",
+      "category": "Performance",
+      "summary": "Optional LatencyMon or WPR capture, then device/driver-specific investigation. A high DPC value is a clue, not measured input-to-photon latency.",
+      "benefit": "Guided diagnostic when stutter/dropouts exist",
+      "tradeoff": "Reproduce audio/workload fault and verify it disappears; don't disable devices/services en masse.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p24",
+      "title": "Mouse/input preferences",
+      "category": "Performance",
+      "summary": "Native pointer speed/precision and vendor-supported polling settings; no FPS claim. Preserve accessibility and user sensitivity. Mouse settings",
+      "benefit": "Opt-in QoL",
+      "tradeoff": "Validate real input in relevant games/apps; restore exact prior state. High polling-rate experiments measure CPU/frame-time effects.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p25",
+      "title": "Commit/pressure dashboard",
+      "category": "Performance",
+      "summary": "Sample commit/limit, paging, hard faults, working sets and physical/cache composition. Pagefile, RAMMap",
+      "benefit": "Default diagnostic",
+      "tradeoff": "Judge foreground latency and failures; “free RAM” alone is not a win. No cache clearing.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p26",
+      "title": "Pagefile correctness",
+      "category": "Performance",
+      "summary": "Consider measured peak commit plus dump requirements, existing volumes and free space. Pagefile",
+      "benefit": "Preserve; recommend system management when an artificial cap is causing pressure",
+      "tradeoff": "Confirm after reboot, repeat pressure workload, restore prior complete multi-volume configuration if selected. Never size only by installed RAM.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p27",
+      "title": "Compression/SysMain preservation",
+      "category": "Performance",
+      "summary": "Do not disable these because RAM exceeds a threshold or the OS disk is SSD. The legacy heuristics have no validated benefit here.",
+      "benefit": "Default preserve",
+      "tradeoff": "Only a separately scoped troubleshooting experiment could justify a change; check warm launches and paging, not cached-RAM screenshots.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p28",
+      "title": "Power-mode experiment",
+      "category": "Performance",
+      "summary": "Compare supported Balanced/current and Best performance mode; preserve OEM control and existing plan. Performance guidance",
+      "benefit": "Opt-in, separate AC/battery targets",
+      "tradeoff": "Sustained workload, temperatures, power and noise; restore old plan/settings. No repeated duplication or unpark-all.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/performance-optimization/tips-to-improve-pc-performance-in-windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p29",
+      "title": "Thermal/power-limit diagnosis",
+      "category": "Performance",
+      "summary": "Show sustained clocks, temperatures and limit flags with provider confidence; unknown sensors stay unknown. Adaptive scheduling must remain intact. Intel hybrid guidance",
+      "benefit": "Default diagnostic where reliable sensors exist; manual remediation",
+      "tradeoff": "Repeat sustained workload after a specific correction. Cooling, fans, hardware service and firmware remain manual.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://www.intel.com/content/www/us/en/developer/articles/guide/12th-gen-intel-core-processor-gamedev-guide.html",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p30",
+      "title": "Sleep/hibernate/Fast Startup",
+      "category": "Performance",
+      "summary": "Diagnose actual sleep/resume and boot behavior. Hibernation availability is a user workflow choice, not an automatic disk-cleanup target.",
+      "benefit": "Preserve; guided opt-in changes",
+      "tradeoff": "Test restart, shutdown/boot, sleep/resume and peripherals separately; restore captured power/hibernate state.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p31",
+      "title": "SleepStudy and battery reports",
+      "category": "Performance",
+      "summary": "Bounded native reports identify standby activity and battery trends; use WPR escalation when needed. SleepStudy",
+      "benefit": "Default available diagnostic, applicable laptop",
+      "tradeoff": "Repeated representative sleep intervals, resume functionality and drain; no permanent monitoring by default.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby-sleepstudy",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p32",
+      "title": "DNS/network-path diagnosis",
+      "category": "Performance",
+      "summary": "Separate DNS lookup, local link, router, Internet path and remote service. Preserve existing DNS/DHCP by default.",
+      "benefit": "Default diagnostic; DNS change opt-in",
+      "tradeoff": "Repeated cached/uncached DNS tests, packet RTT/loss under load and connectivity. Restore prior per-adapter IPv4/IPv6/DHCP state.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p33",
+      "title": "NIC moderation/offload experiment",
+      "category": "Performance",
+      "summary": "Expose documented property values and tradeoffs, not English-name assumptions. Latency and CPU/throughput objectives can conflict. NIC tuning",
+      "benefit": "Experiment, exact supporting adapter/driver",
+      "tradeoff": "Compare host CPU, throughput, loss and loaded latency; restore exact previous values. No changes on remote-use link without recovery.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p34",
+      "title": "Router/Wi-Fi guidance",
+      "category": "Performance",
+      "summary": "Use measured signal/link loss/loaded latency to suggest Ethernet, placement/channel or router queue-management investigation.",
+      "benefit": "Guided/manual",
+      "tradeoff": "Repeat same endpoints/load; record topology. Do not claim a Windows registry change fixes upstream congestion.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p35",
+      "title": "CPU affinity/priority experiments",
+      "category": "Performance",
+      "summary": "Prefer application fixes; avoid hard affinities on hybrid CPUs. No automatic Process Lasso rules or priority boosts. Intel guidance, Scheduling priorities",
+      "benefit": "Expert experiment only, demonstrated scheduler contention",
+      "tradeoff": "Per-title A/B/A with throughput, frame pacing and background functionality; restore all process settings. Realtime priority excluded.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://www.intel.com/content/www/us/en/developer/articles/guide/12th-gen-intel-core-processor-gamedev-guide.html",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.p36",
+      "title": "Hardware upgrade/readiness advisor",
+      "category": "Performance",
+      "summary": "Identify an actual storage, RAM-capacity, cooling or display constraint before suggesting purchases or firmware changes.",
+      "benefit": "Manual recommendation after diagnosis",
+      "tradeoff": "State expected affected workload, uncertainty and physical/vendor checks. No automated BIOS flash, overclock, undervolt, XMP/EXPO or security disabling.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Gaming",
+        "Laptop"
+      ]
+    },
+    {
+      "id": "guide.q01",
+      "title": "Show file extensions",
+      "category": "Windows preferences",
+      "summary": "Explorer → View → Show → File name extensions. Candidate for a qualified user-scope provider; guided fallback. Extensions",
+      "benefit": "Usability; Recommend",
+      "tradeoff": "Longer visible names; helps recognize file types but is not malware protection. Verify representative files in Explorer. Restore the captured preference.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/common-file-name-extensions-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q02",
+      "title": "Explorer landing page",
+      "category": "Windows preferences",
+      "summary": "Explorer Options → Open File Explorer to → Home or This PC where available. Guide/Candidate. Explorer",
+      "benefit": "Usability; Opt-in",
+      "tradeoff": "Changes navigation habit and recent/cloud discovery. Reopen Explorer to verify; restore exact previous target.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/fileexplorer/file-explorer-in-windows?nochrome=true",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q03",
+      "title": "Frequent folders and tabs",
+      "category": "Windows preferences",
+      "summary": "Use native pinning and Explorer tabs on compatible builds. Guide. Explorer, Shortcuts",
+      "benefit": "Usability; Opt-in folders, educational tips available by default",
+      "tradeoff": "Never infer private folders or replace existing pins. Verify chosen destination; removing a new pin is different from reconstructing an entire previous layout.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/fileexplorer/file-explorer-in-windows?nochrome=true",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q04",
+      "title": "Hidden files and preview pane",
+      "category": "Windows preferences",
+      "summary": "Native Explorer controls; preserve protected-system-file hiding. Guide. Explorer",
+      "benefit": "Usability; Opt-in",
+      "tradeoff": "Preview capability depends on installed handlers and trust restrictions. Do not bypass preview protections; restore preferences without deleting handlers.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/fileexplorer/file-explorer-in-windows?nochrome=true",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q05",
+      "title": "Extended context-menu commands",
+      "category": "Windows preferences",
+      "summary": "Native Show more options and keyboard reference. Guide. Explorer",
+      "benefit": "Usability; Preserve current menu",
+      "tradeoff": "No legacy-menu registry patch or Explorer injection in defaults. Verify required app command remains accessible.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-gb/windows/experience/fileexplorer/file-explorer-in-windows?nochrome=true",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q06",
+      "title": "Index scope review",
+      "category": "Windows preferences",
+      "summary": "Windows Search settings / Advanced indexing options. Guide initially. Indexing",
+      "benefit": "Usability/resource hygiene; Recommend assessment, exclusions Opt-in",
+      "tradeoff": "Exclusions can make searches incomplete; show exact paths and file types. Verify representative filename/content searches after index settles; restore scope.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:search",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/search-indexing-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q07",
+      "title": "Enhanced search choice",
+      "category": "Windows preferences",
+      "summary": "Classic/Enhanced or current equivalent when exposed. Guide. Indexing",
+      "benefit": "Usability; Opt-in",
+      "tradeoff": "Wider indexing consumes resources; account for laptop use and initial indexing. Restore prior mode, allowing index rebuild time.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:search",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/performance-optimization/search-indexing-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q08",
+      "title": "Default-app repair",
+      "category": "Windows preferences",
+      "summary": "Windows Default apps page; documented per-app link where supported. Guide, not association-database rewriting. Settings URI",
+      "benefit": "Usability; Opt-in, user selects app/type",
+      "tradeoff": "Changes affect opening files/links. Test a sample file; guide back to the recorded prior choice. Do not promise an automated undo without a qualified provider.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:defaultapps",
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q09",
+      "title": "Optional fast filename search",
+      "category": "Tools",
+      "summary": "Optional Everything integration, qualified separately in PUBLIC-TOOLS.md.",
+      "benefit": "Usability; Opt-in",
+      "tradeoff": "Extra software/index/service choices need disclosure. It complements content/app search; do not disable Windows Search because it was installed.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:search",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q10",
+      "title": "Taskbar alignment/search presentation",
+      "category": "Windows preferences",
+      "summary": "Personalization → Taskbar. Guide/Candidate only for qualified individual preferences. Taskbar",
+      "benefit": "Appearance/usability; Opt-in",
+      "tradeoff": "Preserve the user's navigation habits. Check taskbar and keyboard search; restore old values. No FPS claim.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:taskbar",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-taskbar-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q11",
+      "title": "Widgets and Task View entry points",
+      "category": "Windows preferences",
+      "summary": "Documented taskbar switches. Guide/Candidate. Taskbar",
+      "benefit": "Appearance; Opt-in, suggested in Minimal Distraction",
+      "tradeoff": "Hiding an entry point is not package removal or proof that background work stopped. Verify visibility; restore exact state.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:taskbar",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-taskbar-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q12",
+      "title": "Start pins, folders and recommendations",
+      "category": "Windows preferences",
+      "summary": "Personalization → Start and native pin controls. Guide, version-specific controls only. Start",
+      "benefit": "Appearance/privacy; Opt-in",
+      "tradeoff": "Reduces convenient recent-item discovery. Do not rewrite layout databases or impose an invented default layout. Verify visible results; guided restoration unless exact layout capture is supported.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:personalization-start",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-windows-start-menu",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q13",
+      "title": "Windows tips/welcome interruption",
+      "category": "Windows preferences",
+      "summary": "System → Notifications → Additional settings. Guide/Candidate. Notifications",
+      "benefit": "Distraction reduction; Recommend proposal",
+      "tradeoff": "Less onboarding help. Restore previous toggles; distinguish value readback from proving a future welcome screen will not appear.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:notifications",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/notifications-and-do-not-disturb-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q14",
+      "title": "Notification sender review",
+      "category": "Windows preferences",
+      "summary": "Per-app banners, sounds and notification-center preferences. Guide initially. Notifications",
+      "benefit": "Usability; Recommend audit, changes Opt-in",
+      "tradeoff": "Missed messages/alarms are possible. Preview each sender; test important workflows and restore that sender's configuration.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:notifications",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/notifications-and-do-not-disturb-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q15",
+      "title": "Lock-screen content privacy",
+      "category": "Windows preferences",
+      "summary": "Hide sensitive notification content using exposed controls. Guide/Candidate. Notifications",
+      "benefit": "Privacy; Recommend in Privacy",
+      "tradeoff": "Less glanceable information. Test with a harmless notification while locked; restore the prior choice.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:notifications",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/notifications-and-do-not-disturb-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q16",
+      "title": "Do Not Disturb rules",
+      "category": "Windows preferences",
+      "summary": "Automatic game/full-screen/schedule rules and priority exceptions. Guide. Notifications",
+      "benefit": "Usability; Gaming/Minimal proposal, otherwise Opt-in",
+      "tradeoff": "Important banners may be silenced. Test exceptions, notification-center delivery and automatic exit; restore all changed rules.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:quiethours",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/notifications-and-do-not-disturb-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q17",
+      "title": "Focus sessions",
+      "category": "Windows preferences",
+      "summary": "Native Focus/Clock workflow. Guide. Focus",
+      "benefit": "Usability; Opt-in, user-started",
+      "tradeoff": "User chooses session duration and breaks. No service disabling or permanent notification kill switch. End the session and restore changed preferences.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:quiethours",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/make-it-easier-to-focus-on-tasks",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q18",
+      "title": "Snap configuration",
+      "category": "Windows preferences",
+      "summary": "System → Multitasking; Win+Z tips. Guide/Candidate. Snap",
+      "benefit": "Usability; Preserve, offer tailored adjustments",
+      "tradeoff": "Some users dislike individual snap gestures. Check actual window placement; restore only selected behavior.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:multitasking",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/snap-your-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q19",
+      "title": "Monitor reconnect behavior",
+      "category": "Windows preferences",
+      "summary": "Display → Multiple displays → remember positions/minimize on disconnect. Guide. Monitors",
+      "benefit": "Usability; Recommend for docks/multiple monitors",
+      "tradeoff": "Depends on display topology and apps. Test undock/reconnect; preserve scaling, orientation and primary display. Restore original preferences.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:display",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/how-to-use-multiple-monitors-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q20",
+      "title": "Virtual desktops",
+      "category": "Windows preferences",
+      "summary": "Task View and Multitasking preferences. Guide with shortcuts. Shortcuts",
+      "benefit": "Usability; Opt-in",
+      "tradeoff": "No automatic desktop creation or relocation of open apps. Verify current/all-desktop behavior; manual restoration when layout reconstruction is unsupported.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:multitasking",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q21",
+      "title": "Local clipboard history",
+      "category": "Windows preferences",
+      "summary": "System → Clipboard / Win+V. Guide. Clipboard",
+      "benefit": "Usability with retention tradeoff; Opt-in",
+      "tradeoff": "Copied private material can remain accessible. Show local history separately from cloud sync; restore preference, not deleted history.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:clipboard",
+      "sourceUrl": "https://support.microsoft.com/en-US/Windows/Apps/using-the-clipboard",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q22",
+      "title": "Cross-device clipboard",
+      "category": "Windows preferences",
+      "summary": "Clipboard sync and automatic/manual sync choice. Account-dependent. Guide. Clipboard",
+      "benefit": "Convenience/cloud privacy tradeoff; Opt-in, Privacy proposes off",
+      "tradeoff": "Explain cloud transfer/account scope. Verify configured mode; turning sync off cannot undo data already transferred.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:clipboard",
+      "sourceUrl": "https://support.microsoft.com/en-US/Windows/Apps/using-the-clipboard",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q23",
+      "title": "Clear clipboard history",
+      "category": "Windows preferences",
+      "summary": "Native clear controls; Guide/API candidate only after scope validation. Clipboard",
+      "benefit": "Privacy; explicit one-time action",
+      "tradeoff": "Destructive; pinned items require separate review. Do not capture clipboard contents in optimizer logs or backups. No content undo.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:clipboard",
+      "sourceUrl": "https://support.microsoft.com/en-US/Windows/Apps/using-the-clipboard",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q24",
+      "title": "Text size, scale and pointer visibility",
+      "category": "Windows preferences",
+      "summary": "Native Accessibility and Display pages. Guide. Visibility, Resolution, Mouse",
+      "benefit": "Accessibility/usability; Preserve, Opt-in changes",
+      "tradeoff": "Preview readability and layout; never reset accessibility with a gaming profile. Restore full previous values; keep UI operable at high DPI.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:easeofaccess-display",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/make-windows-easier-to-see",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q25",
+      "title": "Animation/transparency preferences",
+      "category": "Windows preferences",
+      "summary": "Accessibility visual effects and documented personalization controls. Guide/Candidate. Focus",
+      "benefit": "Appearance/perceived responsiveness; Opt-in",
+      "tradeoff": "Reduced motion may be preferable; transparency is a visual preference. No automatic benchmark gain claimed. Verify visible effect and restore prior state.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:easeofaccess-visualeffects",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/make-it-easier-to-focus-on-tasks",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q26",
+      "title": "Night light/brightness/color",
+      "category": "Windows preferences",
+      "summary": "Display settings, supported hardware only. Guide. Color",
+      "benefit": "Comfort/display quality; Opt-in",
+      "tradeoff": "Color-sensitive work may require different choices. Test image and schedule; restore exact prior values. HDR/refresh performance belongs in the performance catalog.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:nightlight",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-display-brightness-and-color-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q27",
+      "title": "Mouse behavior",
+      "category": "Windows preferences",
+      "summary": "Pointer speed/precision, button assignment, scrolling and visibility in native settings. Guide/Candidate. Mouse",
+      "benefit": "Usability; Opt-in",
+      "tradeoff": "Preserve sensitivity, handedness and accessibility. Check intended app behavior; restore all selected values. No universal gaming acceleration prescription.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:mousetouchpad",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q28",
+      "title": "Sound output and volume workflow",
+      "category": "Windows preferences",
+      "summary": "Native Sound/volume mixer; Win+Ctrl+V where supported. Guide. Shortcuts",
+      "benefit": "Usability; Opt-in, shortcut education by default",
+      "tradeoff": "Device changes can affect calls, capture and games differently. Verify playback/mic selection in those apps; restore previous endpoints, without deleting audio devices.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:sound",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q29",
+      "title": "Selective PowerToys modules",
+      "category": "Tools",
+      "summary": "Official PowerToys settings; version qualification in PUBLIC-TOOLS.md. PowerToys",
+      "benefit": "Usability; Opt-in install and module choices",
+      "tradeoff": "Extra resident processes, shortcuts and updates. Measure footprint if relevant; preserve existing configuration, disable selected modules or uninstall via normal route.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows/powertoys/",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q30",
+      "title": "Shortcut reference",
+      "category": "Windows preferences",
+      "summary": "Searchable small set for Explorer, Snap, screenshots, audio and desktops. Shortcuts",
+      "benefit": "Usability; Recommend education, no mutation",
+      "tradeoff": "Show availability and existing remappings. Do not overwrite user shortcuts to match a preset.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q31",
+      "title": "Advertising/personalization review",
+      "category": "Windows preferences",
+      "summary": "Privacy & security → General or Recommendations & offers, according to actual build. Guide. General privacy",
+      "benefit": "Privacy; Privacy proposal",
+      "tradeoff": "Turning off advertising ID does not remove all ads or browser tracking. Read effective setting; restore preference without claiming recovery of the previous identifier.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:privacy-general",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/general-privacy-settings-in-windows",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q32",
+      "title": "Optional diagnostics/feedback review",
+      "category": "Windows preferences",
+      "summary": "Diagnostics & feedback. Guide, edition/policy-aware. Diagnostics",
+      "benefit": "Privacy; Privacy proposal",
+      "tradeoff": "Reduces optional reporting, not all Windows data transmission. Required data and security remain. Verify setting; past transfers cannot be undone.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:privacy-feedback",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/diagnostics-feedback-and-privacy-in-windows",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q33",
+      "title": "App diagnostics permission",
+      "category": "Windows preferences",
+      "summary": "App diagnostics page, per account/app where exposed. Guide. App diagnostics",
+      "benefit": "Privacy; Opt-in",
+      "tradeoff": "Some diagnostic app features may stop working; desktop apps are not governed by this control. Test chosen workflow and restore permission.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:privacy-appdiagnostics",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/windows-app-diagnostics-and-privacy",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q34",
+      "title": "Camera/microphone access audit",
+      "category": "Windows preferences",
+      "summary": "Separate device access, app permissions, desktop-app access and browser site permissions. Guide. Camera/microphone",
+      "benefit": "Privacy/usability; Recommend audit, changes Opt-in",
+      "tradeoff": "Calls/recording/dictation may break. Do not describe the list as exhaustive. Test the actual selected application; restore the exact permission level.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:privacy-webcam",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/windows-camera-microphone-and-privacy",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q35",
+      "title": "Location and Find My Device",
+      "category": "Windows preferences",
+      "summary": "Native Location settings plus Find My Device review. Guide. Location",
+      "benefit": "Privacy/convenience; Opt-in, preserve by default",
+      "tradeoff": "Disabling location can affect device finding, automatic time zone and some Wi-Fi information access. Show conflicts first; restore permission and test intended features.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:privacy-location",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/windows-location-service-and-privacy",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q36",
+      "title": "Browser permission handoff",
+      "category": "Windows preferences",
+      "summary": "Browser-native site-permission controls. Guide, browser/version-specific. Camera/microphone",
+      "benefit": "Privacy; Opt-in",
+      "tradeoff": "Do not edit browser profile databases, extension stores or certificates. Verify chosen site's call/permission flow; restore its previous permission if desired.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/windows-camera-microphone-and-privacy",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q37",
+      "title": "OneDrive/Windows Backup awareness",
+      "category": "Maintenance",
+      "summary": "Display sync/backup configuration and open official apps/settings. Guide. Backup, OneDrive",
+      "benefit": "Reliability/cloud convenience; Preserve, audit Recommend",
+      "tradeoff": "Cloud storage/account availability matters; sync can propagate deletions. Do not treat the presence of a sync client as proof that files are backed up. No silent unlink/removal.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/back-up-and-restore-with-windows-backup",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q38",
+      "title": "Recall state and controls",
+      "category": "Windows preferences",
+      "summary": "Native Recall & snapshots; keep Windows Hello authorization in Windows. Guide. Recall privacy",
+      "benefit": "Privacy/usability; Preserve current state (off stays off), changes Opt-in",
+      "tradeoff": "Show unsupported/absent/unknown separately. Separate saving, filters, retention and deletion. Changing a toggle is not a guarantee that all sensitive material is excluded.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/privacy/privacy-and-control-over-your-recall-experience",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q39",
+      "title": "Recall optional-feature removal",
+      "category": "Windows preferences",
+      "summary": "Supported Windows optional-feature UI; automate only after exact servicing contract qualifies. Guide/API candidate. Recall removal",
+      "benefit": "Storage/privacy/feature loss; explicit advanced opt-in",
+      "tradeoff": "Removal deletes saved snapshots; re-enabling the feature does not restore them. Machine-wide feature operation must show all affected users. Never classify as exact undo.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:optionalfeatures",
+      "sourceUrl": "https://support.microsoft.com/en-us/accessibility/windows/copilot/use-a-screen-reader-to-explore-and-navigate-recall",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q40",
+      "title": "Copilot/AI app entry points",
+      "category": "Windows preferences",
+      "summary": "Detect actual installed app and supported pin/uninstall controls. Guide, no old universal registry key. Start, App removal",
+      "benefit": "Appearance/feature choice; Opt-in",
+      "tradeoff": "Unpin, uninstall app and disable other AI functionality are distinct actions. Preserve unrelated apps, runtimes and NPU drivers. Verify exact selected scope; reinstall is conditional.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:appsfeatures",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-windows-start-menu",
+      "profiles": [
+        "Privacy"
+      ]
+    },
+    {
+      "id": "guide.q41",
+      "title": "Storage overview and cleanup preview",
+      "category": "Maintenance",
+      "summary": "Native Storage categories/cleanup recommendations; bounded optimizer-owned scan later. Guide/API candidate. Storage",
+      "benefit": "Storage; Recommend assessment, deletion Opt-in",
+      "tradeoff": "Estimated bytes differ from actual reclaimable space. Never select Downloads, Recycle Bin or previous Windows install implicitly; verify actual free-space change. Deleted content has no general undo.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:storagesense",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/storage-settings-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q42",
+      "title": "Storage Sense retention",
+      "category": "Maintenance",
+      "summary": "System → Storage → Storage Sense. Capture actual retention/cloud settings. Guide initially. Storage Sense",
+      "benefit": "Storage/usability; Recommend review, activation Opt-in",
+      "tradeoff": "Recurring deletion or online-only conversion is consequential. Show each category; restore configuration, not files already deleted.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:storagepolicies",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/manage-drive-space-with-storage-sense",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q43",
+      "title": "OneDrive offline availability",
+      "category": "Maintenance",
+      "summary": "Free up space versus Always keep on this device. Guide. OneDrive",
+      "benefit": "Storage/usability; Opt-in per selection",
+      "tradeoff": "Online-only files need connectivity; content search differs. Check sync/availability and known-folder protection before changes. Rehydration needs account access, network and space.",
+      "mode": "Guided",
+      "settingsUri": null,
+      "sourceUrl": "https://support.microsoft.com/en-us/onedrive/save-disk-space-with-onedrive-files-on-demand-for-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q44",
+      "title": "Startup-app review",
+      "category": "Apps & startup",
+      "summary": "Apps → Startup / Task Manager and application controls. Guide/Candidate. See performance catalog.",
+      "benefit": "Startup/background performance potential; Recommend audit, changes Opt-in",
+      "tradeoff": "Preserve security, accessibility, sync and peripheral needs. Verify login/workflows, not merely entry disappearance; restore prior launch configuration.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:startupapps",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q45",
+      "title": "Active hours and restart scheduling",
+      "category": "Maintenance",
+      "summary": "Windows Update → Advanced options → Active hours; exposed restart scheduler. Guide. Active hours, Update FAQ",
+      "benefit": "Reliability/usability; Recommend review",
+      "tradeoff": "Do not overwrite a chosen manual schedule with Automatic. Verify configured schedule; cancellation/restoration cannot reverse a restart already performed.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:windowsupdate-options",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/keep-your-pc-up-to-date-with-active-hours",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q46",
+      "title": "Temporary update pause",
+      "category": "Maintenance",
+      "summary": "Native Windows Update pause when available. Guide. Update FAQ",
+      "benefit": "Troubleshooting convenience; Opt-in, bounded",
+      "tradeoff": "Delays protection; show end/resume date and management constraints. Preserve update services; resume using native control.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:windowsupdate",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-update-faq",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q47",
+      "title": "Recovery readiness",
+      "category": "Maintenance",
+      "summary": "Recovery/Windows Backup pages; distinguish System Restore, WinRE, file backup and newer available recovery options. Guide/API assessment. Recovery, Backup",
+      "benefit": "Reliability; Recommend assessment/guidance",
+      "tradeoff": "Backup registration is not evidence of a tested restore. Do not collect recovery keys into logs. Recovery configuration changes require their own preview; no guaranteed system rollback badge.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:recovery",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/recovery-options-in-windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q48",
+      "title": "Installed-app review",
+      "category": "Apps & startup",
+      "summary": "Current-user Installed apps / official package APIs after qualification. API/Guide. App removal",
+      "benefit": "Storage/usability; Recommend inventory, removal Opt-in",
+      "tradeoff": "Show exact identity, data risk, scope and reinstall route; never auto-remove merely because bundled. Reinstall rarely restores all app state.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:appsfeatures",
+      "sourceUrl": "https://learn.microsoft.com/en-us/powershell/module/appx/remove-appxpackage?view=windowsserver2025-ps",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "guide.q49",
+      "title": "Large files and redundant tools",
+      "category": "Maintenance",
+      "summary": "Bounded file-size view/optional disk visualizer; tool choices in PUBLIC-TOOLS.md.",
+      "benefit": "Storage/usability; Opt-in scan and selection",
+      "tradeoff": "Size/age alone is not evidence a file is unwanted. Exclude reparse traversal by default, preserve cloud placeholders, avoid destructive duplicate-file heuristics.",
+      "mode": "Guided",
+      "settingsUri": "ms-settings:storagesense",
+      "sourceUrl": "https://support.microsoft.com/en-us/windows",
+      "profiles": [
+        "Everyday",
+        "Minimal Distraction"
+      ]
+    },
+    {
+      "id": "tool.powertoys",
+      "title": "Microsoft PowerToys",
+      "category": "Tools",
+      "summary": "Window layouts, quick file previews and selected productivity utilities.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows/powertoys/",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.autoruns",
+      "title": "Autoruns",
+      "category": "Tools",
+      "summary": "Inspect startup items with Microsoft Sysinternals; changes require your review.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.process-explorer",
+      "title": "Process Explorer",
+      "category": "Tools",
+      "summary": "Investigate process resource use and ownership.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.rammap",
+      "title": "RAMMap",
+      "category": "Tools",
+      "summary": "Understand memory use; routine cache flushing is not an optimization.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/sysinternals/downloads/rammap",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.everything",
+      "title": "Everything",
+      "category": "Tools",
+      "summary": "Fast filename search that complements Windows Search.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://www.voidtools.com/",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.windirstat",
+      "title": "WinDirStat",
+      "category": "Tools",
+      "summary": "Find large folders before choosing what to remove.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://windirstat.net/",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.presentmon",
+      "title": "PresentMon",
+      "category": "Tools",
+      "summary": "Measure frame presentation for a repeatable game workload.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://github.com/GameTechDev/PresentMon",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.capframex",
+      "title": "CapFrameX",
+      "category": "Tools",
+      "summary": "Analyze controlled frame-time captures.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://github.com/CXWorld/CapFrameX",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.latencymon",
+      "title": "LatencyMon",
+      "category": "Tools",
+      "summary": "Investigate a reproducible audio or DPC latency problem.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://www.resplendence.com/latencymon",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.bcu",
+      "title": "Bulk Crap Uninstaller",
+      "category": "Tools",
+      "summary": "Optional advanced uninstall manager; review every deletion.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://github.com/BCUninstaller/Bulk-Crap-Uninstaller",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.win11debloat",
+      "title": "Win11Debloat",
+      "category": "Tools",
+      "summary": "Reviewed candidate for a future restricted adapter. This build opens upstream documentation only.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://github.com/Raphire/Win11Debloat",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "tool.wpt",
+      "title": "Windows Performance Toolkit",
+      "category": "Tools",
+      "summary": "Advanced recordings and analysis for startup, CPU and storage bottlenecks.",
+      "benefit": "Optional specialist tool",
+      "tradeoff": "Opens the official publisher page. Nothing is downloaded, installed or run automatically. Review publisher terms and background overhead.",
+      "mode": "External",
+      "settingsUri": null,
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows-hardware/test/wpt/",
+      "profiles": [
+        "Everyday",
+        "Gaming"
+      ]
+    }
+  ]
+}

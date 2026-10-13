@@ -1,0 +1,39 @@
+<Window x:Class="Optimizer.App.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Windows Workbench" Style="{StaticResource {x:Type Window}}" Width="1250" Height="850" MinWidth="930" MinHeight="640" WindowStartupLocation="CenterScreen">
+  <Grid x:Name="RootLayout" Background="{DynamicResource CanvasBrush}">
+    <Grid.ColumnDefinitions><ColumnDefinition Width="232" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+    <Border Background="{DynamicResource RailBrush}">
+      <DockPanel Margin="20,28,14,24">
+        <StackPanel DockPanel.Dock="Top" Margin="6,0,0,28">
+          <TextBlock Text="WINDOWS" FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource RailInkBrush}" Opacity="0.8" />
+          <TextBlock Text="Workbench" FontSize="27" FontWeight="SemiBold" Foreground="{DynamicResource RailInkBrush}" Margin="0,4,0,8" />
+          <TextBlock Text="Windows 11 Optimizer · preview" FontSize="11" Foreground="{DynamicResource RailInkBrush}" Opacity="0.8" />
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom" Margin="6,20,0,0">
+          <Border Height="1" Background="{DynamicResource RailInkBrush}" Opacity="0.22" Margin="0,0,0,16" />
+          <TextBlock Text="YOUR PC. YOUR CHOICES." FontFamily="Consolas" FontSize="10" Foreground="{DynamicResource RailInkBrush}" />
+          <TextBlock Text="Assess, review, change, verify." Margin="0,8,0,0" FontSize="12" Foreground="{DynamicResource RailInkBrush}" Opacity="0.8" />
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="Navigation" /></ScrollViewer>
+      </DockPanel>
+    </Border>
+    <Grid Grid.Column="1">
+      <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+      <Border Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1" Padding="30,18">
+        <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+          <StackPanel><TextBlock Text="LOCAL WORKSPACE" FontFamily="Consolas" FontSize="10" Foreground="{DynamicResource MutedBrush}" /><TextBlock x:Name="DeviceLine" Text="Reading Windows information…" Margin="0,5,0,0" FontSize="13" /></StackPanel>
+          <Button Grid.Column="1" x:Name="ReviewShortcut" Content="Review changes · 0" Click="ReviewShortcut_Click" Margin="12,0,0,0" />
+        </Grid>
+      </Border>
+      <ScrollViewer x:Name="PageScroll" Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" CanContentScroll="False">
+        <StackPanel x:Name="Page" Margin="30,28,30,30" />
+      </ScrollViewer>
+      <Border Grid.Row="2" Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,1,0,0" Padding="30,12">
+        <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+          <StackPanel><ProgressBar x:Name="BusyIndicator" IsIndeterminate="True" Height="3" Margin="0,0,0,7" Visibility="Collapsed" AutomationProperties.Name="Operation in progress" /><TextBlock x:Name="StatusLine" Text="Assessment is read-only. Choose a preference to prepare a change." FontSize="12" Foreground="{DynamicResource MutedBrush}" AutomationProperties.LiveSetting="Polite" /></StackPanel>
+          <TextBlock x:Name="CatalogLine" Grid.Column="1" Text="PREVIEW" FontFamily="Consolas" Margin="20,0,0,0" FontSize="10" Foreground="{DynamicResource MutedBrush}" />
+        </Grid>
+      </Border>
+    </Grid>
+  </Grid>
+</Window>

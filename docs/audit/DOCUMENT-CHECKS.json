@@ -1,0 +1,41 @@
+{
+  "ReviewDate": "2026-10-04",
+  "DocumentCount": 9,
+  "BrokenLocalLinks": [],
+  "OpaqueCitations": [],
+  "UnbalancedCodeFences": [],
+  "MissingReferenceDefinitions": [],
+  "FindingCount": 27,
+  "PerformanceCapabilities": 36,
+  "QualityOfLifeCapabilities": 49,
+  "InputFingerprints": [
+    {
+      "File": "Optimize-Win11.ps1",
+      "MatchesRecordedFingerprint": true
+    },
+    {
+      "File": "README.md",
+      "MatchesRecordedFingerprint": true
+    },
+    {
+      "File": "win11_debloat_guide.md",
+      "MatchesRecordedFingerprint": true
+    },
+    {
+      "File": "first.md",
+      "MatchesRecordedFingerprint": true
+    },
+    {
+      "File": "second.md",
+      "MatchesRecordedFingerprint": true
+    },
+    {
+      "File": "third.md",
+      "MatchesRecordedFingerprint": true
+    },
+    {
+      "File": "fourth.md",
+      "MatchesRecordedFingerprint": true
+    }
+  ]
+}

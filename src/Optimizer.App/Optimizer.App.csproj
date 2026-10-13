@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>WindowsWorkbench</AssemblyName>
+    <RootNamespace>Optimizer.App</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Optimizer.Core/Optimizer.Core.csproj" />
+    <ProjectReference Include="../Optimizer.Windows/Optimizer.Windows.csproj" />
+  </ItemGroup>
+</Project>
